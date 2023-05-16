@@ -166,7 +166,7 @@ const OurAssets = () => {
                 color: `${theme.palette.text.secondary}`,
               }}
             >
-              WHY CHOOSE E-BAZAR?
+              WHY CHOOSE <span style={{ color: "#0078B7" }}>E-BAZAR?</span>
             </Typography>
             <Box
               sx={{

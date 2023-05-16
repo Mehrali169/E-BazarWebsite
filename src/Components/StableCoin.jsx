@@ -59,8 +59,6 @@ const StableCoin = ({ mode }) => {
                   fontSize: { md: "40px", sm: "30px", xs: "26px" },
                   fontWeight: 500,
                   fontFamily: "DOS",
-                  // background:
-                  //   "linear-gradient(97.01deg, #0078B7 8.16%, #50A6ED 103.71%)",
                   background: `${theme.palette.text.color3}`,
                   webkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",

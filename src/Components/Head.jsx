@@ -40,7 +40,7 @@ const Head = ({ toggleMode, mode }) => {
       <List>
         {pages.map((text, index) => (
           <ListItem key={index}>
-            <ListItemButton>
+            <ListItemButton sx={{ color: `${theme.palette.text.secondary}` }}>
               <ListItemText primary={text} />
             </ListItemButton>
           </ListItem>

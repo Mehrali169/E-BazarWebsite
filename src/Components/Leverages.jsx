@@ -43,14 +43,11 @@ const Leverages = ({ mode }) => {
                 fontSize: { md: "45px", sm: "35px", xs: "26px" },
                 fontFamily: "DOS",
                 fontWeight: 400,
-                // background:
-                //   "linear-gradient(97.01deg, #0078B7 8.16%, #50A6ED 103.71%)",
                 background: `${theme.palette.text.color3}`,
                 webkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
                 textFillColor: "transparent",
-                // width: "max-content",
                 py: 1,
               }}
             >
@@ -59,7 +56,6 @@ const Leverages = ({ mode }) => {
             <Typography
               sx={{
                 fontSize: { md: "16px", sm: "14px", xs: "12px" },
-                // color: "#292929",
                 fontFamily: "Roboto",
                 color: `${theme.palette.text.secondary}`,
               }}
@@ -97,7 +93,17 @@ const Leverages = ({ mode }) => {
             </Typography>
           </Box>
         </Grid>
-        <Grid item md={6} sm={12} xs={12} sx={{ textAlign: "center" }}>
+        <Grid
+          item
+          md={6}
+          sm={12}
+          xs={12}
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
           {mode === "dark" ? (
             <Box
               component="img"

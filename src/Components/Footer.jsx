@@ -21,7 +21,7 @@ const Footer = ({ mode }) => {
       <Container>
         <Grid container>
           <Grid item md={3} sm={6} xs={12}>
-            <Box sx={{ py: { md: 8, xs: 2 }, mx: { sm: 6, xs: 6, md: 0 } }}>
+            <Box sx={{ py: { md: 8, xs: 2 }, mx: { sm: 6, xs: 0, md: 0 } }}>
               <Box component="img" src={logo} alt="brand" mb={2} />
               <Typography
                 sx={{
@@ -49,7 +49,7 @@ const Footer = ({ mode }) => {
           <Grid item md={3} sm={6} xs={12}>
             <Box
               sx={{
-                mx: 6,
+                mx: { md: 6, xs: 0 },
                 mt: { md: 19, sm: 19, xs: 2 },
               }}
             >
@@ -132,7 +132,7 @@ const Footer = ({ mode }) => {
           <Grid item md={3} sm={6} xs={12}>
             <Box
               sx={{
-                mx: 6,
+                mx: { md: 6, xs: 0 },
                 mt: { md: 19, sm: 0, xs: 2 },
               }}
             >
@@ -165,7 +165,7 @@ const Footer = ({ mode }) => {
           <Grid item md={3} sm={6} xs={12}>
             <Box
               sx={{
-                mx: 6,
+                mx: { md: 6, xs: 0 },
                 mt: { md: 19, sm: 0, xs: 2 },
               }}
             >

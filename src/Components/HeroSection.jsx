@@ -9,7 +9,7 @@ import {
 import herosectionbg3 from "../Assests/herosectionbg3.png";
 import herosectionnytbg from "../Assests/herosectionnytbg.png";
 import ebazarimg from "../Assests/ebazarimg.png";
-import ebazarnytimg1 from "../Assests/ebazarnytimg1.png";
+import ebazarnytimg from "../Assests/ebazarnytimg.png";
 import React from "react";
 
 const HeroSection = ({ mode }) => {
@@ -35,14 +35,13 @@ const HeroSection = ({ mode }) => {
                 sx={{
                   fontSize: { md: "55px", sm: "40px", xs: "26px" },
                   textAlign: "start",
-                  fontWeight: 700,
+                  fontWeight: 400,
                   fontFamily: "DOS",
                   color: `${theme.palette.text.color1}`,
                 }}
               >
                 MAKE YOUR INTEREST BEARING
-                <span style={{ color: "#57C9E5" }}> ASSETS</span>
-                LIQUID
+                <span style={{ color: "#57C9E5" }}> ASSETS</span> LIQUID
               </Typography>
               <Typography
                 sx={{
@@ -94,18 +93,14 @@ const HeroSection = ({ mode }) => {
             </Box>
           </Grid>
           <Grid item md={6} sm={12} xs={12}>
-            <Box
-              sx={{
-                textAlign: "center",
-              }}
-            >
+            <Box sx={{ textAlign: "center" }}>
               {mode === "dark" ? (
                 <Box
                   component="img"
-                  src={ebazarnytimg1}
+                  src={ebazarnytimg}
                   alt="ebazarimg"
-                  width="100%"
-                  height="100%"
+                  width="80%"
+                  height="80%"
                 />
               ) : (
                 <Box
