@@ -44,10 +44,10 @@ const OurAssets = () => {
     <Box
       sx={{
         backgroundImage: `url(${effect2})`,
-        // backgroundSize: "40% 60%",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "left bottom",
       }}
+      id="ASSEST"
     >
       <Container sx={{ py: 10 }}>
         <Box
@@ -155,6 +155,7 @@ const OurAssets = () => {
             sx={{
               pt: { md: 16, sm: 8, xs: 8 },
             }}
+            id="ABOUT"
           >
             <Typography
               sx={{

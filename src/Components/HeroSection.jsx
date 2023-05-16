@@ -26,6 +26,7 @@ const HeroSection = ({ mode }) => {
         height: "100%",
         py: 10,
       }}
+      id="APP"
     >
       <Container>
         <Grid container columnSpacing={10}>

@@ -13,7 +13,7 @@ import React from "react";
 const Leverages = ({ mode }) => {
   const theme = useTheme();
   return (
-    <Container sx={{ py: 4 }}>
+    <Container sx={{ py: 4 }} id="OPPORTUNITIES">
       <Grid container columnSpacing={4}>
         <Grid item md={6} sm={12} xs={12}>
           <Box sx={{ position: "relative" }}>

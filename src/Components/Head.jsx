@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import logo from "../Assests/logo.png";
 import togglebutton from "../Assests/togglebutton.png";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Link } from "react-scroll";
 
 import {
   Button,
@@ -16,7 +17,12 @@ import {
   useTheme,
 } from "@mui/material";
 
-const pages = ["APP", "ASSEST", "ABOUT US", "OPPORTUNITIES"];
+const pages = [
+  { id: "APP", title: "APP" },
+  { id: "ASSEST", title: "ASSEST" },
+  { id: "ABOUT", title: "ABOUT US" },
+  { id: "OPPORTUNITIES", title: "OPPORTUNITIES" },
+];
 const Head = ({ toggleMode, mode }) => {
   const theme = useTheme();
   console.log(theme);
@@ -64,12 +70,23 @@ const Head = ({ toggleMode, mode }) => {
         <Box sx={{ display: "flex", alignItems: "center" }}>
           {pages.map((item, ind) => {
             return (
-              <Typography
-                sx={{ mx: 2, display: { md: "block", sm: "none", xs: "none" } }}
-                key={ind}
+              <Link
+                activeClass="active"
+                to={item.id}
+                spy={true}
+                smooth={true}
+                duration={1000}
               >
-                {item}
-              </Typography>
+                <Typography
+                  sx={{
+                    mx: 2,
+                    display: { md: "block", sm: "none", xs: "none" },
+                  }}
+                  key={ind}
+                >
+                  {item.title}
+                </Typography>
+              </Link>
             );
           })}
           <Button onClick={() => toggleMode()}>
