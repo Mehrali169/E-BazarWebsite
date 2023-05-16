@@ -1,7 +1,7 @@
-.App {
-  text-align: center;
+@font-face{
+  font-family: DOS;
+  src: url(../src/font/Perfect\ DOS\ VGA\ 437.ttf);
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
