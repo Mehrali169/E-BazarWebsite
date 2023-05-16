@@ -47,10 +47,36 @@ const Head = ({ toggleMode, mode }) => {
         {pages.map((text, index) => (
           <ListItem key={index}>
             <ListItemButton sx={{ color: `${theme.palette.text.secondary}` }}>
-              <ListItemText primary={text} />
+              <Link
+                activeClass="active"
+                to={text.id}
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
+                <ListItemText
+                  primary={text.title}
+                  onClick={toggleDrawer(anchor, false)}
+                />
+              </Link>
             </ListItemButton>
           </ListItem>
         ))}
+        <Button
+          sx={{
+            display: { md: "block", sm: "block", xs: "block" },
+            background:
+              "linear-gradient(97.01deg, #0078B7 8.16%, #50A6ED 103.71%)",
+            border: "3px solid #000000",
+            borderRadius: "56px",
+            color: "#FFFFFF",
+            mx: 3,
+            px: 3,
+          }}
+          onClick={toggleDrawer(anchor, false)}
+        >
+          Launch App
+        </Button>
       </List>
     </Box>
   );
@@ -76,13 +102,13 @@ const Head = ({ toggleMode, mode }) => {
                 spy={true}
                 smooth={true}
                 duration={1000}
+                key={ind}
               >
                 <Typography
                   sx={{
                     mx: 2,
                     display: { md: "block", sm: "none", xs: "none" },
                   }}
-                  key={ind}
                 >
                   {item.title}
                 </Typography>
